@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -35,7 +37,7 @@
 								</header>
 								<a href="#projects" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<img id="headshot" src="images/IMG_0383.PNG" alt="" />
 								</a>
 							</article>
 
@@ -43,14 +45,56 @@
 							<article id="projects" class="panel">
 								<header>
 									<h2>Projects</h2>
+									<p>
+										My projects include a full-stack clone of airbnb, a JavaScript app that allows makes calls to an API to allow users to search for Cryptocurrency price changes over time, and a social networking application that allows users to participate in fun activities with other users near them. Check out my projects below!
+									</p>
 								</header>
-								<p>
-									My projects include a full-stack clone of airbnb written in React-Redux, Ruby on Rails, CSS and HTML, 
-									a Javascript app that allows uses an API to allow users to search for Cryptocurrency price changes over time,
-									and a social application that allows users to find other users near them who have similar interests, form groups with them, and participate in fun activities together. 
-									Check out all my live links here!
-								</p>
-								<section>
+								<div class="projects-container">
+								<!-- <div class="row"> -->
+									<div class="project">
+										<h3>
+											Landbnb
+										</h3>
+										<p>
+											Landbnb is a full-stack vacation rental application, inspired by Airbnb. The goal of this project was to replicate the core features of Airbnb while demonstrating proficiency in a range of web technologies. Built with <span class="keyword">React </span>, <span class="keyword">Redux</span>, <span class="keyword">Rails</span>, <span class="keyword">PostgreSQL</span>, <span class="keyword">JavaScript</span>, <span class="keyword">HTML5</span>, <span class="keyword">CSS3</span>, <span class="keyword">AWS S3</span>, and <span class="keyword">Google Maps API</span>, the application is hosted on <span class="keyword">Heroku</span>. Click on the image to be directed to the app.
+										</p>
+										<a href="https://landbnb-us.herokuapp.com/#/" target="_blank" class="image fit"><img src="images/Landbnb.png" alt=""></a>
+										<h3>Features</h3>
+										<p>
+											Users can search for vacation listings by location, available dates, and maximum number of guests. They can also host listings, upload photos stored in <span class="keyword">AWS S3</span>, and input location data that gets geocoded by the <span class="keyword">Google Maps API</span> for map display. The backend, powered by <span class="keyword">Ruby on Rails</span>, serves as an API to implement <span class="keyword">CRUD functionality</span> for Users, Listings, Bookings, and Reviews. I implemented <span class="keyword">User Authentication</span> in Ruby by leveraging the Bcrypt gem for <span class="keyword">secure password hashing</span>, and also provided a 'Demo User' option to enhance the user experience, allowing them to bypass the sign-up process and explore the app effortlessly.
+										</p>
+									</div>
+									<div class="divider"></div>
+									<div class="project">
+										<h3>
+											CoinLook
+										</h3>
+										<p>
+											CoinLook is a crypto price data visualization app that allows users to compare crypto price trends. This was my first project and the goal of this project was to become more familiar with the fundamentals of <span class="keyword">JavaScipt</span> and the <span class="keyword">Document Object Model</span> before moving on to libraries such as <span class="keyword">React</span>. Another goal of this project was to challenge myself to learn and implement <span class="keyword">D.3</span>, a technology that I was unfamiliar with before starting this project. Built with <span class="keyword">JavaScript</span>, <span class="keyword">HTML5</span>, <span class="keyword">CSS3</span>, and the <span class="keyword">D.3</span> library, the project is hosted on <span class="keyword">Github</span>. Click on the image to be directed to the app.
+										</p>
+										<a href="https://hisrael1.github.io/CoinLook/" target="_blank" class="image fit"><img src="images/CoinLook.png" alt=""></a>
+										<h3>Features</h3>
+										<p>
+											Users can select two coins as well as a start date and an end date. Once the user completes these fields and hits submit, the user will see a data visualization of the price trends being plotted concurrently. This is done by fetching data from the <span class="keyword">CoinGecko API</span> using <span class="keyword">jQuery</span>, parsing the data, and then appending the data to the DOM using a combination of <span class="keyword">event listeners</span>, <span class="keyword">event handlers</span>, and the <span class="keyword">D.3</span> library.
+										</p>
+									</div>
+									<div class="divider"></div>
+									<div class="project">
+										<h3>
+											WeGo 
+										</h3>
+										<p>
+											WeGo is a full-stack social networking application designed to connect users interested in participating in similar activities. The goal of this project was to test my knowledge of software engineering fundamentals and ability to quickly learn and implement a new stack. Another objective of this project was to enhance my teamwork abilities in app development and refine my verbal communication skills, while mastering <span class="keyword">Git version control</span> and related tools. This application was a group project built with <span class="keyword">MongoDB</span>, <span class="keyword">Express</span>, <span class="keyword">React</span>, <span class="keyword">Redux</span>, <span class="keyword">Node</span>, <span class="keyword">AWS</span>, <span class="keyword">HTML5</span>, and <span class="keyword">CSS3</span>. Click on the image to be directed to the app.
+										</p>
+										<a href="https://wegoapp.dev/" target="_blank" class="image fit"><img src="images/WeGo.png" alt=""></a>
+										<h3>Features</h3>
+										<p>
+											<span class="keyword">Express middleware</span> was implemented for efficient data transfer between the backend and frontend, enabling multi-criteria search functionality for users. The app features a robust data model with constraints designed and enforced in <span class="keyword">MongoDB</span>, ensuring data consistency and integrity throughout the application. Integration of <span class="keyword">Redux</span> with <span class="keyword">React</span> allows for maintaining, validating, and persisting global state, while mapping state and dispatch into components via props.
+										</p>
+									</div>
+								</div>
+								<!-- </div> -->
+								<!-- <section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="https://landbnb-us.herokuapp.com/#/" target="_blank" class="image fit"><img src="images/Landbnb.png" alt=""></a>
@@ -62,7 +106,7 @@
 											<a href="https://wegoapp.dev/" target="_blank" class="image fit"><img src="images/WeGo.png" alt=""></a>
 										</div>
 									</div>
-								</section>
+								</section> -->
 							</article>
 
 						<!-- Contact -->
@@ -114,6 +158,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

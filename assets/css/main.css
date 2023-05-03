@@ -1306,11 +1306,13 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		/* background-image: url("images/overlay.png"), url("images/bg.jpg"); */
+		background-image: url("images/background-img-trial3.jpg"), url("images/background-img-trial3.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
+		background-color: rgb(0, 138, 184);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1548,6 +1550,7 @@ input, select, textarea {
 
 	.image {
 		display: inline-block;
+		margin-bottom: 5%;
 	}
 
 		.image img {
@@ -2190,3 +2193,22 @@ input, select, textarea {
 			}
 
 		}
+.divider {
+	border-top: 1px solid rgb(171, 171, 171);
+	width: 100%;
+	margin: 0 auto; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.keyword {
+	color: blue;
+}
+
+.slick-prev:before, .slick-next:before{
+	color: rgb(0, 138, 184) !important;
+}
+
+#headshot {
+	object-fit: fill;
+}
